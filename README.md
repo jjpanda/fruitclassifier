@@ -1,7 +1,7 @@
 # Image classification of Citrus Fruits
 
-~~~
 #### To build an image classification system to classify 8 types of citrus fruits: 
+~~~
 1. calamansi
 2. lemon
 3. lime
