@@ -1,6 +1,6 @@
 # Image classification of Citrus Fruits
 
-#### To build an image classification system to classify 8 types of citrus fruits: 
+### To build an image classification system to classify 8 types of citrus fruits: 
 ~~~
 1. calamansi
 2. lemon
@@ -10,4 +10,10 @@
 6. pomelo
 7. tangerine 
 8. yuzu
+~~~
+
+#### Install
+~~~
+sudo pip install tensorflow 
+sudo pip install h5py pillow 
 ~~~
