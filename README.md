@@ -14,6 +14,5 @@
 
 #### Install
 ~~~
-sudo pip install tensorflow 
-sudo pip install h5py pillow 
+pip3 install theano tensorflow keras
 ~~~
