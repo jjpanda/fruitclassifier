@@ -2,17 +2,48 @@
 
 ### To build an image classification system to classify 8 types of citrus fruits: 
 ~~~
-1. calamansi
-2. lemon
-3. lime
-4. mandarin orange
-5. orange
-6. pomelo
-7. tangerine 
-8. yuzu
+1. apple
+2. orange
+3. peach
+4. pineapple
 ~~~
 
 #### Install
 ~~~
 pip3 install theano tensorflow keras
+~~~
+
+#### Data
+~~~
+pip3 install theano tensorflow keras
+~~~
+
+#### Results
+
+##### k-Nearest Neighbors
+~~~
+             precision    recall  f1-score   support
+
+          0       0.53      0.41      0.46      1869
+          1       0.64      0.66      0.65      2801
+          2       0.48      0.47      0.47      2249
+          3       0.58      0.69      0.63      2104
+
+avg / total       0.57      0.57      0.57      9023
+
+accuracy_score: 0.56965532528
+~~~
+
+##### Gaussian Naive Bayes
+~~~
+             precision    recall  f1-score   support
+
+          0       0.42      0.35      0.38      1869
+          1       0.58      0.65      0.61      2801
+          2       0.39      0.24      0.30      2249
+          3       0.47      0.65      0.55      2104
+
+avg / total       0.47      0.49      0.47      9023
+
+accuracy_score: 0.486091100521
 ~~~
