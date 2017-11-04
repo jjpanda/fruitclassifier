@@ -1,6 +1,6 @@
 # Image classification of Citrus Fruits
 
-### To build an image classification system to classify 8 types of citrus fruits: 
+### To build an image classification system to classify 4 types of citrus fruits: 
 ~~~
 1. apple
 2. orange
@@ -15,7 +15,10 @@ pip3 install theano tensorflow keras
 
 #### Data
 ~~~
-pip3 install theano tensorflow keras
+1. Download and export URLs of images of each fruit type from ImageNet as txt
+2. Run 01_dl_images.py to download the images
+3. Run 02_trans_images.py to resize (128 x 128) and augment the images
+4. Perform analysis on various models
 ~~~
 
 #### Results
