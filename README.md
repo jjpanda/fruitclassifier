@@ -1,6 +1,6 @@
-# Image classification of Citrus Fruits
+# Image classification of Fruits
 
-### To build an image classification system to classify 4 types of citrus fruits: 
+### To build an image classification system to classify 4 kinds of fruits: 
 ~~~
 1. apple
 2. orange
