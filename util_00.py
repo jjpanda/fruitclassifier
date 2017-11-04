@@ -1,5 +1,9 @@
 import os
 
+import numpy as np
+from PIL import Image
+from sklearn.model_selection import train_test_split
+
 #check directory exist
 def checkdir(absolute_path):
     print('checking directory:', absolute_path)
@@ -7,9 +11,6 @@ def checkdir(absolute_path):
         print('Creating ''%s''' % absolute_path)
         os.makedirs(absolute_path)
 
-from PIL import Image
-import numpy as np
-from sklearn.model_selection import train_test_split
 
 train_data_dir = "data/augmented"
 validation_data_dir = "data/augmented"

@@ -1,7 +1,8 @@
+import os
+
+import numpy as np
 from PIL import Image
 
-import os
-import numpy as np
 import util_00 as util
 
 def save_jpg(image, file_path):
@@ -50,4 +51,3 @@ for i in os.listdir(src_path):
 		except Exception as e:
 			print('error image:', f)
 			print(e)
-		
