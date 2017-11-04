@@ -1,49 +1,56 @@
 from PIL import Image
 import os
-
-source_path = 'C:/Users/phuaj/Desktop/project/data/original'
-dest_path = 'C:/Users/phuaj/Desktop/project/data/resize' 
-paths = [source_path, dest_path]
+import numpy as np
 
 #check directory exist
-for p in paths:
-	if not os.path.exists(p):
-		print('Creating ''%s''' % p)
-		os.makedirs(p)
+def checkdir(folder_path):
+	if not os.path.exists(folder_path):
+		print('Creating ''%s''' % folder_path)
+		os.makedirs(folder_path)
 
-print('source:', os.listdir(source_path))
-print('destination:', os.listdir(dest_path))
+def save_jpg(image, file_path):
+	image.convert('RGB').save(file_path + '.jpg', 'JPEG', quality=90)
+	
+current_path = os.path.dirname(os.path.abspath(__file__))
+src_path = os.path.join(current_path, 'data', 'original')
+dest_path = os.path.join(current_path, 'data', 'augmented')
 
 #data augmentation
-resize_width, reize_height = 128, 128
-count = 0
+resize_width, resize_height = 128, 128
 
-def save_jpg(image, filename_ext):
-	image.convert('RGB').save(im_dest_path + filename_ext + '.jpg', 'JPEG', quality=90)
-
-for i in os.listdir(source_path):
-	print('start to process:', i)
-	im_source_path = source_path + '/' + str(i)
-	im_dest_path = dest_path + '/' + str(count)
-	im = Image.open(im_source_path)
-	
-	#resize
-	im_flip = im_resize = im.resize((resize_width, reize_height), Image.ANTIALIAS)
-	save_jpg(im_resize, '_resized')
-	
-	#flip
-	im_resize.transpose(Image.FLIP_LEFT_RIGHT)
-	save_jpg(im_resize, '_flip')
-	
-	#rotate
-	size = [np.random.randint(150, 180), np.random.randint(170, 200), np.random.randint(190, 220), np.random.randint(210, 240)]
-	random = [np.random.randint(0, 20), np.random.randint(20, 40), np.random.randint(-40, -20), np.random.randint(-20, 0)]
-	box = [(j/2-resize_width/2, j/2-resize_width/2, j/2+resize_width/2, j/2+resize_width/2) for j in size]
-	
-	for j in range(len(size)):
-		imRotate = im.rotate(random[j]).resize((size[j],size[j]), Image.ANTIALIAS).crop(box[j])
-		imRotate2 = im_flip.rotate(random[j]).resize((size[j],size[j]), Image.ANTIALIAS).crop(box[j])
-		save_jpg(imRotate, '_rotate')
-		save_jpg(imRotate2, '_' + str(j+len(size)) + '_rotate')
-	
-	count += 1
+for i in os.listdir(src_path):
+	print('Processing images in folder:', i)
+	src_fruit_path = os.path.join(src_path, str(i)) #set to each fruit folder
+	dest_fruit_path = os.path.join(dest_path, str(i)) #save image to respective fruit folder
+	checkdir(dest_fruit_path)	
+	for f_img in os.listdir(src_fruit_path):
+		print('image:', f_img)
+		count = 0
+		im_source_path = os.path.join(src_fruit_path, str(f_img))
+		try:
+			im = Image.open(im_source_path)
+			#destination folder
+			im_name = os.path.basename(im_source_path) #get image name without file extension
+			im_dest_path = os.path.join(dest_fruit_path,str(im_name) + '_' )
+			
+			#resize
+			im_resize = im.resize((resize_width, resize_height), Image.ANTIALIAS)
+			save_jpg(im_resize, im_dest_path + '_resized')
+			
+			#flip
+			im_flip = im_resize.transpose(Image.FLIP_LEFT_RIGHT)
+			save_jpg(im_flip, im_dest_path + '_flip')
+			
+			#rotate
+			size = [np.random.randint(150, 180), np.random.randint(170, 200), np.random.randint(190, 220), np.random.randint(210, 240)]
+			random = [np.random.randint(0, 20), np.random.randint(20, 40), np.random.randint(-40, -20), np.random.randint(-20, 0)]
+			box = [(j/2-resize_width/2, j/2-resize_width/2, j/2+resize_width/2, j/2+resize_width/2) for j in size]
+			
+			for j in range(len(size)):
+				imRotate = im.rotate(random[j]).resize((size[j],size[j]), Image.ANTIALIAS).crop(box[j])
+				imRotate2 = im_flip.rotate(random[j]).resize((size[j],size[j]), Image.ANTIALIAS).crop(box[j])
+				save_jpg(imRotate, im_dest_path + str(j) +  '_rotate')
+				save_jpg(imRotate2, im_dest_path + '_' + str(j+len(size)) + '_rotate')
+		except:
+			print('error image:', f)
+		
