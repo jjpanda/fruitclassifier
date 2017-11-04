@@ -32,9 +32,8 @@ pip3 install theano tensorflow keras
 avg / total       0.57      0.57      0.57      9023
 
 accuracy_score: 0.56965532528
-
-![Confusion Matrix](knn_confusion.png)
 ~~~
+![Confusion Matrix](knn_confusion.png)
 
 ##### Gaussian Naive Bayes
 ~~~
@@ -48,6 +47,5 @@ accuracy_score: 0.56965532528
 avg / total       0.47      0.49      0.47      9023
 
 accuracy_score: 0.486091100521
-
-![Confusion Matrix](gnb_confusion.png)
 ~~~
+![Confusion Matrix](gnb_confusion.png)
