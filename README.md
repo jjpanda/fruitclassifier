@@ -1,4 +1,4 @@
-# Image classification of Fruits
+# Image classification of fruits
 
 ### To build an image classification system to classify 4 kinds of fruits: 
 ~~~
