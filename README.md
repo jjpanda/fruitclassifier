@@ -8,12 +8,12 @@
 4. pineapple
 ~~~
 
-## Install
+# Install
 ~~~
 pip3 install theano tensorflow keras
 ~~~
 
-## Data
+# Data
 ~~~
 1. Download and export URLs of images of each fruit type from ImageNet as txt
 2. Run 01_dl_images.py to download the images
@@ -23,15 +23,15 @@ pip3 install theano tensorflow keras
 4. Perform analysis on various models
 ~~~
 
-## Results
+# Results
 
-### Principal component analysis 
+## Principal component analysis 
 * [pca_components.py](pca_components.py)
 
 A vital part of using PCA in practice is the ability to estimate how many components are needed to describe the data. We can determine this by looking at the cumulative explained variance ratio as a function of the number of components.
 ![pca](pca.png)
 
-### k-Nearest Neighbors
+## k-Nearest Neighbors
 * [k-nn.py](k-nn.py)
 ~~~
              precision    recall  f1-score   support
@@ -47,7 +47,7 @@ accuracy_score: 0.522311631309
 ~~~
 ![Confusion Matrix](knn_confusion.png)
 
-### Gaussian Naive Bayes
+## Gaussian Naive Bayes
 * [gnb.py](gnb.py)
 ~~~
              precision    recall  f1-score   support
@@ -63,9 +63,9 @@ accuracy_score: 0.430504754938
 ~~~
 ![Confusion Matrix](gnb_confusion.png)
 
-### Convolutional Neural Network (CNN) using Keras
+## Convolutional Neural Network (CNN) using Keras
 
-#### Model Summary
+### Model Summary
 ~~~
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #
