@@ -16,3 +16,6 @@ pca = PCA().fit(x_train)
 plt.plot(np.cumsum(pca.explained_variance_ratio_))
 plt.xlabel('number of components')
 plt.ylabel('cumulative explained variance')
+
+plt.savefig('pca.png')
+plt.show()
