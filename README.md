@@ -23,6 +23,10 @@ pip3 install theano tensorflow keras
 
 #### Results
 
+##### Principal component analysis 
+(pca.png)
+
+
 ##### k-Nearest Neighbors
 ~~~
              precision    recall  f1-score   support
