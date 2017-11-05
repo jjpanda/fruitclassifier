@@ -24,7 +24,7 @@ pip3 install theano tensorflow keras
 #### Results
 
 ##### Principal component analysis 
-(pca.png)
+![pca](pca.png)
 
 
 ##### k-Nearest Neighbors
