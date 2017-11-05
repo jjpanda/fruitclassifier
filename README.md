@@ -48,13 +48,13 @@ accuracy_score: 0.522311631309
 ~~~
              precision    recall  f1-score   support
 
-          0       0.42      0.35      0.38      1869
-          1       0.58      0.65      0.61      2801
-          2       0.39      0.24      0.30      2249
-          3       0.47      0.65      0.55      2104
+          0       0.34      0.38      0.36       576
+          1       0.60      0.49      0.54       829
+          2       0.36      0.21      0.26       683
+          3       0.40      0.63      0.49       646
 
-avg / total       0.47      0.49      0.47      9023
+avg / total       0.44      0.43      0.42      2734
 
-accuracy_score: 0.486091100521
+accuracy_score: 0.430504754938
 ~~~
 ![Confusion Matrix](gnb_confusion.png)
