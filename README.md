@@ -33,14 +33,14 @@ A vital part of using PCA in practice is the ability to estimate how many compon
 ~~~
              precision    recall  f1-score   support
 
-          0       0.53      0.41      0.46      1869
-          1       0.64      0.66      0.65      2801
-          2       0.48      0.47      0.47      2249
-          3       0.58      0.69      0.63      2104
+          0       0.47      0.43      0.45       576
+          1       0.65      0.57      0.61       829
+          2       0.44      0.40      0.42       683
+          3       0.50      0.67      0.58       646
 
-avg / total       0.57      0.57      0.57      9023
+avg / total       0.52      0.52      0.52      2734
 
-accuracy_score: 0.56965532528
+accuracy_score: 0.522311631309
 ~~~
 ![Confusion Matrix](knn_confusion.png)
 
