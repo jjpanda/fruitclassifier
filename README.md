@@ -24,12 +24,13 @@ pip3 install theano tensorflow keras
 ~~~
 
 ### Results
-
+[pca_components.py](pca_components.py)
 #### Principal component analysis 
 A vital part of using PCA in practice is the ability to estimate how many components are needed to describe the data. We can determine this by looking at the cumulative explained variance ratio as a function of the number of components.
 ![pca](pca.png)
 
 #### k-Nearest Neighbors
+[k-nn.py](k-nn.py)
 ~~~
              precision    recall  f1-score   support
 
@@ -45,6 +46,7 @@ accuracy_score: 0.522311631309
 ![Confusion Matrix](knn_confusion.png)
 
 #### Gaussian Naive Bayes
+[gnb.py](gnb.py)
 ~~~
              precision    recall  f1-score   support
 
