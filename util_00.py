@@ -12,8 +12,8 @@ def checkdir(absolute_path):
         os.makedirs(absolute_path)
 
 
-train_data_dir = "data/augmented"
-validation_data_dir = "data/augmented"
+train_data_dir = "data/train"
+test_data_dir = "data/test"
 
 def _get_fruit_labels(path):
     fruits = {}
@@ -40,7 +40,14 @@ def _load_images(path, fruits):
     return np.array(data), np.array(labels)
 
 def get_data():
+    x_train, y_train = get_train_data()
+    x_test, y_test = get_test_data()
+    return x_train, x_test, y_train, y_test
+
+def get_train_data():
     fruits = _get_fruit_labels(train_data_dir)
-    x_data, y_data = _load_images(train_data_dir, fruits)
-    x_train, x_test, y_train, y_test = train_test_split(x_data, y_data, test_size=0.33, random_state=2017)
-    return np.array(x_train), np.array(x_test), np.array(y_train), np.array(y_test)
+    return _load_images(train_data_dir, fruits)
+
+def get_test_data():
+    fruits = _get_fruit_labels(test_data_dir)
+    return _load_images(test_data_dir, fruits)
