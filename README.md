@@ -17,7 +17,9 @@ pip3 install theano tensorflow keras
 ~~~
 1. Download and export URLs of images of each fruit type from ImageNet as txt
 2. Run 01_dl_images.py to download the images
-3. Run 02_trans_images.py to resize (128 x 128) and augment the images
+3. Run 02_trans_images.py to resize (128 x 128) and augment the image 
+     3.1 x_train = Resize, Flip and/or Rotate
+     3.2 x_test = Resize
 4. Perform analysis on various models
 ~~~
 
