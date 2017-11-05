@@ -27,6 +27,7 @@ pip3 install theano tensorflow keras
 
 #### Principal component analysis 
 [pca_components.py](pca_components.py)
+
 A vital part of using PCA in practice is the ability to estimate how many components are needed to describe the data. We can determine this by looking at the cumulative explained variance ratio as a function of the number of components.
 ![pca](pca.png)
 
