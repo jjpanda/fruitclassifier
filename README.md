@@ -170,3 +170,7 @@ Traceback (most recent call last):
 NameError: name 'plt' is not defined
 >>>
 ~~~
+
+# References
+* [Ensemble ML](https://machinelearningmastery.com/ensemble-machine-learning-algorithms-python-scikit-learn/)
+
