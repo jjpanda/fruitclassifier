@@ -63,7 +63,8 @@ accuracy_score: 0.430504754938
 ~~~
 ![Confusion Matrix](gnb_confusion.png)
 
-## Convolutional Neural Network (CNN) using Keras
+## Convolutional Neural Netwnork (CNN) using Keras
+* [cnn.py](cnn.py)
 
 ### Model Summary
 ~~~
