@@ -51,3 +51,9 @@ def get_train_data():
 def get_test_data():
     fruits = _get_fruit_labels(test_data_dir)
     return _load_images(test_data_dir, fruits)
+
+resize_width = 128
+resize_height = 128
+	
+def get_resize_dimension():
+	return resize_width, resize_height
