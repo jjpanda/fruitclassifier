@@ -29,7 +29,7 @@ pip3 install theano tensorflow keras
 * [pca_components.py](pca_components.py)
 
 A vital part of using PCA in practice is the ability to estimate how many components are needed to describe the data. We can determine this by looking at the cumulative explained variance ratio as a function of the number of components.
-![pca](results\pca\pca.png)
+![pca](results/pca/pca.png)
 
 ## k-Nearest Neighbors
 * [k-nn.py](k-nn.py)
@@ -61,7 +61,7 @@ avg / total       0.44      0.43      0.42      2734
 
 accuracy_score: 0.430504754938
 ~~~
-![Confusion Matrix](results\gnb\gnb_confusion.png)
+![Confusion Matrix](results/gnb/gnb_confusion.png)
 
 ## Convolutional Neural Netwnork (CNN) using Keras
 * [cnn.py](cnn.py)
