@@ -45,7 +45,7 @@ avg / total       0.52      0.52      0.52      2734
 
 accuracy_score: 0.522311631309
 ~~~
-![Confusion Matrix](results\knn\knn_confusion.png)
+![Confusion Matrix](results/knn/knn_confusion.png)
 
 ## Gaussian Naive Bayes
 * [gnb.py](gnb.py)
