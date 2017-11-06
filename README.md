@@ -63,8 +63,27 @@ accuracy_score: 0.430504754938
 ~~~
 ![Confusion Matrix](results/gnb/gnb_confusion.png)
 
-## Convolutional Neural Netwnork (CNN) using Keras
-* [cnn.py](cnn.py)
+## Boosting Algorithms
+* [06_boosting.py](06_boosting.py)
+### AdaBoost
+~~~
+~~~
+
+### Stochastic Gradient Boosting
+
+## Bagging Algorithms
+* [07_bagging.py](07_bagging.py)
+### Bagged Decision Trees
+~~~
+~~~
+
+### Random Forest
+~~~
+~~~
+
+### Extra Trees
+~~~
+~~~
 
 ### Model Summary
 ~~~
