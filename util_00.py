@@ -3,6 +3,10 @@ import os
 import numpy as np
 from PIL import Image
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix, precision_score, recall_score, accuracy_score, f1_score, classification_report
+from sklearn.decomposition import PCA
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 #check directory exist
 def checkdir(absolute_path):
@@ -51,9 +55,38 @@ def get_train_data():
 def get_test_data():
     fruits = _get_fruit_labels(test_data_dir)
     return _load_images(test_data_dir, fruits)
-
-resize_width = 128
-resize_height = 128
 	
 def get_resize_dimension():
-	return resize_width, resize_height
+    resize_width = 128
+    resize_height = 128
+    return resize_width, resize_height
+    
+def print_results(y_test, y_pred):
+    print(classification_report(y_test, y_pred))
+    print('Accuracy score: ', accuracy_score(y_test, y_pred))
+    print('Precision score: ', precision_score(y_test, y_pred, average='weighted'))
+    print('Recall score: ', recall_score(y_test, y_pred, average='weighted'))
+    print('F1 score: ', f1_score(y_test, y_pred, average='weighted'))
+
+def generate_confusion_matrix(y_test, y_pred, image_name):
+    mat = confusion_matrix(y_test, y_pred)
+    sns_plot = sns.heatmap(mat.T, square=True, annot=True, fmt='d', cbar=False)
+    plt.xlabel('true label')
+    plt.ylabel('predicted label')
+    plt.savefig(image_name)
+    #plt.show()
+
+def get_pca_data(pca_component):
+    x_train, x_test, y_train, y_test = get_data()
+    print('x_train shape:', x_train.shape)
+    print('y_train shape:', y_train.shape)
+    x_train = [x.reshape(1, -1)[0] for x in x_train]
+    x_test = [x.reshape(1, -1)[0] for x in x_test]
+
+    #pre-processing to extract more meaningful features
+    pca = PCA(svd_solver='randomized', n_components=pca_component, random_state=2017) 
+    x_train = pca.fit_transform(x_train)
+    x_test = pca.transform(x_test)       
+    return x_train, x_test, y_train, y_test
+
+    

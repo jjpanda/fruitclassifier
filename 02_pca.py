@@ -1,8 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.decomposition import PCA
-from sklearn.metrics.scorer import accuracy_scorer
-from sklearn.neighbors import KNeighborsClassifier
 
 import util_00 as util
 
@@ -15,6 +13,7 @@ x_test = [x.reshape(1, -1)[0] for x in x_test]
 pca_components = [3, 6, 9 , 12, 15, 18, 21, 24, 50, 100, 150, 200]
 
 for n in pca_components:
+    print('n_components:', n)
     pca = PCA(n_components=n).fit(x_train)
     print(pca.explained_variance_ratio_)
     print(np.cumsum(pca.explained_variance_ratio_))

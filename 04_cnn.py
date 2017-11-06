@@ -1,15 +1,9 @@
-import keras
 import numpy as np
 from keras import applications
-from keras.datasets import mnist
 from keras.layers import Conv2D, Dense, Dropout, Flatten, MaxPooling2D
 from keras.models import Sequential
 #######
 from PIL import Image
-from sklearn.metrics import classification_report, confusion_matrix
-from sklearn.metrics.scorer import accuracy_score
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 import util_00 as util
 
@@ -76,17 +70,8 @@ y_pred = np.argmax(model.predict(x_test), axis=1)
 
 print(y_test)
 print(y_pred)
-print(classification_report(y_test, y_pred))
-print('Accuracy score: ', accuracy_score(y_test, y_pred))
-print('Precision score: ', precision_score(y_test, y_pred, average='weighted'))
-print('Recall score: ', recall_score(y_test, y_pred, average='weighted'))
-print('F1 score: ', f1_score(y_test, y_pred, average='weighted'))
-
-mat = confusion_matrix(y_test, y_pred)
-sns_plot = sns.heatmap(mat.T, square=True, annot=True, fmt='d', cbar=False)
-plt.xlabel('true label')
-plt.ylabel('predicted label')
-plt.savefig('cnn_confusion.png')
-plt.show()
+print('Results for cnn')
+util.print_results(y_test, y_pred)
+util.generate_confusion_matrix(y_test, y_pred, 'cnn_confusion.png')
 
 
