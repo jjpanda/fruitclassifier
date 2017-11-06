@@ -70,6 +70,8 @@ accuracy_score: 0.430504754938
 ~~~
 
 ### Stochastic Gradient Boosting
+~~~
+~~~
 
 ## Bagging Algorithms
 * [07_bagging.py](07_bagging.py)
@@ -85,6 +87,8 @@ accuracy_score: 0.430504754938
 ~~~
 ~~~
 
+## Convolutional Neural Netwnork (CNN) using Keras
+* [cnn.py](cnn.py)
 ### Model Summary
 ~~~
 _________________________________________________________________
@@ -116,78 +120,6 @@ Non-trainable params: 0
 ~~~
 
 ~~~
->>> #Use categorical_crossentropy loss model to train the model
-... #SGD - Stochastic gradient descent optimizer.
-... model.compile(loss=keras.losses.categorical_crossentropy, optimizer=keras.optimizers.SGD(), metrics=['accuracy'])
->>>
->>> #epochs - how many times you go through the training set
-... run = model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, verbose=1, validation_data=(x_test, y_test))
-Traceback (most recent call last):
-  File "<stdin>", line 2, in <module>
-  File "C:\python36\lib\site-packages\keras\models.py", line 867, in fit
-    initial_epoch=initial_epoch)
-  File "C:\python36\lib\site-packages\keras\engine\training.py", line 1522, in fit
-    batch_size=batch_size)
-  File "C:\python36\lib\site-packages\keras\engine\training.py", line 1390, in _standardize_user_data
-    _check_array_lengths(x, y, sample_weights)
-  File "C:\python36\lib\site-packages\keras\engine\training.py", line 241, in _check_array_lengths
-    'and ' + str(list(set_y)[0]) + ' target samples.')
-ValueError: Input arrays should have the same number of samples as target arrays. Found 24606 input samples and 98424 target samples.
->>> score = model.evaluate(x_test, y_test, verbose=0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "C:\python36\lib\site-packages\keras\models.py", line 896, in evaluate
-    sample_weight=sample_weight)
-  File "C:\python36\lib\site-packages\keras\engine\training.py", line 1646, in evaluate
-    batch_size=batch_size)
-  File "C:\python36\lib\site-packages\keras\engine\training.py", line 1390, in _standardize_user_data
-    _check_array_lengths(x, y, sample_weights)
-  File "C:\python36\lib\site-packages\keras\engine\training.py", line 241, in _check_array_lengths
-    'and ' + str(list(set_y)[0]) + ' target samples.')
-ValueError: Input arrays should have the same number of samples as target arrays. Found 2734 input samples and 10936 target samples.
->>> model.save('model_k_seq.h5')
->>>
->>> print('Test loss:', score[0])
-Test loss: 0.506276124706
->>> print('Test accuracy:', score[1])
-Test accuracy: 0.850402340892
->>>
->>> y_pred = model.predict(x_test)
->>>
->>> print(classification_report(y_test, y_pred))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'classification_report' is not defined
->>> print('accuracy_score:', accuracy_score(y_test, y_pred))
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'accuracy_score' is not defined
->>>
->>> mat = confusion_matrix(y_test, y_pred)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'confusion_matrix' is not defined
->>> sns_plot = sns.heatmap(mat.T, square=True, annot=True, fmt='d', cbar=False)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'sns' is not defined
->>> plt.xlabel('true label')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'plt' is not defined
->>> plt.ylabel('predicted label')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'plt' is not defined
->>> plt.savefig('cnn_confusion.png')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'plt' is not defined
->>> plt.show()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'plt' is not defined
->>>
 ~~~
 
 # References
