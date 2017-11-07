@@ -133,36 +133,57 @@ F1 score:  0.504358756098
 * [cnn.py](cnn.py)
 ### Model Summary
 ~~~
+24606 train samples
+2734 test samples
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #
 =================================================================
-conv2d_3 (Conv2D)            (None, 124, 124, 32)      2432
+conv2d_1 (Conv2D)            (None, 126, 126, 32)      896
 _________________________________________________________________
-max_pooling2d_3 (MaxPooling2 (None, 62, 62, 32)        0
+max_pooling2d_1 (MaxPooling2 (None, 63, 63, 32)        0
 _________________________________________________________________
-dropout_4 (Dropout)          (None, 62, 62, 32)        0
+dropout_1 (Dropout)          (None, 63, 63, 32)        0
 _________________________________________________________________
-conv2d_4 (Conv2D)            (None, 58, 58, 64)        51264
+conv2d_2 (Conv2D)            (None, 61, 61, 32)        9248
 _________________________________________________________________
-max_pooling2d_4 (MaxPooling2 (None, 29, 29, 64)        0
+max_pooling2d_2 (MaxPooling2 (None, 30, 30, 32)        0
 _________________________________________________________________
-dropout_5 (Dropout)          (None, 29, 29, 64)        0
+dropout_2 (Dropout)          (None, 30, 30, 32)        0
 _________________________________________________________________
-flatten_2 (Flatten)          (None, 53824)             0
+flatten_1 (Flatten)          (None, 28800)             0
 _________________________________________________________________
-dense_3 (Dense)              (None, 128)               6889600
+dense_1 (Dense)              (None, 64)                1843264
 _________________________________________________________________
-dropout_6 (Dropout)          (None, 128)               0
+dropout_3 (Dropout)          (None, 64)                0
 _________________________________________________________________
-dense_4 (Dense)              (None, 4)                 516
+dense_2 (Dense)              (None, 4)                 260
 =================================================================
-Total params: 6,943,812
-Trainable params: 6,943,812
+Total params: 1,853,668
+Trainable params: 1,853,668
 Non-trainable params: 0
 ~~~
 
 ~~~
+>>> print(y_test)
+[0 0 0 ..., 3 3 3]
+>>> print(y_pred)
+[0 2 1 ..., 3 3 3]
+
+             precision    recall  f1-score   support
+
+          0       0.56      0.73      0.63       576
+          1       0.75      0.56      0.64       683
+          2       0.87      0.75      0.81       829
+          3       0.79      0.93      0.85       646
+
+avg / total       0.75      0.74      0.74      2734
+
+Accuracy score:  0.740307242136
+Precision score:  0.754531643345
+Recall score:  0.740307242136
+F1 score:  0.73908332645
 ~~~
+![Confusion Matrix](results/bagging/cnn_confusion.png)
 
 # References
 * [Ensemble ML](https://machinelearningmastery.com/ensemble-machine-learning-algorithms-python-scikit-learn/)
