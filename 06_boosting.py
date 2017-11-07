@@ -11,7 +11,7 @@ def adaboost_():
 def gboost_():
     return ensemble.GradientBoostingClassifier(n_estimators = 10, random_state = 2017)
 
-models = [_adaboost, _gboost]
+models = [adaboost_, gboost_]
 
 for i in models:
     print(i)

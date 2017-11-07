@@ -15,7 +15,7 @@ def rforest_():
 def extree_():
     return ensemble.ExtraTreesClassifier(max_features = 1, bootstrap = True, oob_score = True, random_state = 2017)
 
-models = [_bagging, _rforest, _extree]
+models = [bagging_, rforest_, extree_]
 
 for i in models:
     print(i)

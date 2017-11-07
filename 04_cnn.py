@@ -1,7 +1,10 @@
+import keras
+
 import numpy as np
 from keras import applications
 from keras.layers import Conv2D, Dense, Dropout, Flatten, MaxPooling2D
 from keras.models import Sequential
+import tensorflow as tf
 #######
 from PIL import Image
 
@@ -43,7 +46,7 @@ model = Sequential() #Sequential model is a linear stack of layers
 #1 layer
 # input: img_rows x img_cols images with 3 channels -> (?, ?, 3) tensors.
 # this applies 32 convolution filters of size 5x5 each.
-model.add(Conv2D(32, kernel_size=(3, 3), activation='relu', input_shape=(img_rows, img_cols, 3)))
+model.add(Conv2D(32, kernel_size=(3, 3), activation='relu', input_shape=(img_width, img_height, 3)))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Dropout(0.5))
 
