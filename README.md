@@ -91,7 +91,7 @@ Precision score:  0.630897835309
 Recall score:  0.628383321141
 F1 score:  0.62809594008
 ~~~
-![Confusion Matrix](results/bagging/_bagging_confusion.png)
+![Confusion Matrix](results/bagging/bagging_confusion.png)
 
 ### Random Forest
 ~~~
@@ -109,7 +109,7 @@ Precision score:  0.544276773588
 Recall score:  0.542062911485
 F1 score:  0.541542739069
 ~~~
-![Confusion Matrix](results/bagging/_rforest_confusion.png)
+![Confusion Matrix](results/bagging/rforest_confusion.png)
 
 ### Extra Trees
 ~~~
