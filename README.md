@@ -91,6 +91,7 @@ Precision score:  0.630897835309
 Recall score:  0.628383321141
 F1 score:  0.62809594008
 ~~~
+![Confusion Matrix](results/bagging/_bagging_confusion.png)
 
 ### Random Forest
 ~~~
@@ -108,6 +109,7 @@ Precision score:  0.544276773588
 Recall score:  0.542062911485
 F1 score:  0.541542739069
 ~~~
+![Confusion Matrix](results/bagging/_rforest_confusion.png)
 
 ### Extra Trees
 ~~~
@@ -125,6 +127,7 @@ Precision score:  0.506831941778
 Recall score:  0.507315288954
 F1 score:  0.504358756098
 ~~~
+![Confusion Matrix](results/bagging/_extree_confusion.png)
 
 ## Convolutional Neural Netwnork (CNN) using Keras
 * [cnn.py](cnn.py)
