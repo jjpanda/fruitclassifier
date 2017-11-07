@@ -130,7 +130,7 @@ F1 score:  0.504358756098
 ![Confusion Matrix](results/bagging/extree_confusion.png)
 
 ## Convolutional Neural Netwnork (CNN) using Keras
-* [cnn.py](cnn.py)
+* [04_cnn.py](04_cnn.py)
 ### Model Summary
 ~~~
 24606 train samples

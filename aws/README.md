@@ -1,4 +1,11 @@
 # AWS
+1. https://aws.amazon.com/
+2. Click on EC2 for launching a new virtual server.
+3. Select “US West Orgeon” from the drop-down in the top right hand corner. 
+4. Click the “Launch Instance” button.
+5. Click “Community AMIs”. 
+6. Enter “ami-dfb13ebf”
+7. Scroll down and select the “g2.2xlarge” hardware.
 
 ~~~
 aws configure list
