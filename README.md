@@ -77,14 +77,53 @@ accuracy_score: 0.430504754938
 * [07_bagging.py](07_bagging.py)
 ### Bagged Decision Trees
 ~~~
+             precision    recall  f1-score   support
+
+          0       0.55      0.59      0.56       576
+          1       0.72      0.68      0.70       829
+          2       0.60      0.53      0.57       683
+          3       0.62      0.70      0.66       646
+
+avg / total       0.63      0.63      0.63      2734
+
+Accuracy score:  0.628383321141
+Precision score:  0.630897835309
+Recall score:  0.628383321141
+F1 score:  0.62809594008
 ~~~
 
 ### Random Forest
 ~~~
+             precision    recall  f1-score   support
+
+          0       0.47      0.52      0.50       576
+          1       0.64      0.58      0.61       829
+          2       0.49      0.43      0.46       683
+          3       0.55      0.63      0.58       646
+
+avg / total       0.54      0.54      0.54      2734
+
+Accuracy score:  0.542062911485
+Precision score:  0.544276773588
+Recall score:  0.542062911485
+F1 score:  0.541542739069
 ~~~
 
 ### Extra Trees
 ~~~
+             precision    recall  f1-score   support
+
+          0       0.42      0.47      0.45       576
+          1       0.62      0.60      0.61       829
+          2       0.44      0.34      0.38       683
+          3       0.51      0.59      0.55       646
+
+avg / total       0.51      0.51      0.50      2734
+
+Accuracy score:  0.507315288954
+Precision score:  0.506831941778
+Recall score:  0.507315288954
+F1 score:  0.504358756098
 ~~~
 
 ## Convolutional Neural Netwnork (CNN) using Keras
