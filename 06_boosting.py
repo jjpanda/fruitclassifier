@@ -5,10 +5,10 @@ import util_00 as util
 
 x_train, x_test, y_train, y_test = util.get_pca_data(6)
 
-def _adaboost():
+def adaboost_():
     return ensemble.AdaBoostClassifier(tree.DecisionTreeClassifier(max_depth = 2), n_estimators = 10, algorithm ='SAMME', random_state = 2017)
 
-def _gboost():
+def gboost_():
     return ensemble.GradientBoostingClassifier(n_estimators = 10, random_state = 2017)
 
 models = [_adaboost, _gboost]
@@ -21,5 +21,5 @@ for i in models:
     
     print('Results for', i.__name__)
     util.print_results(y_test, y_pred)
-    util.generate_confusion_matrix(y_test, y_pred, i.__name__+'_confusion.png')
+    util.generate_confusion_matrix(y_test, y_pred, i.__name__+'confusion.png')
     
