@@ -127,7 +127,7 @@ Precision score:  0.506831941778
 Recall score:  0.507315288954
 F1 score:  0.504358756098
 ~~~
-![Confusion Matrix](results/bagging/_extree_confusion.png)
+![Confusion Matrix](results/bagging/extree_confusion.png)
 
 ## Convolutional Neural Netwnork (CNN) using Keras
 * [cnn.py](cnn.py)
