@@ -183,7 +183,7 @@ Precision score:  0.754531643345
 Recall score:  0.740307242136
 F1 score:  0.73908332645
 ~~~
-![Confusion Matrix](results/bagging/cnn_confusion.png)
+![Confusion Matrix](results/cnn/cnn_confusion.png)
 
 # References
 * [Ensemble ML](https://machinelearningmastery.com/ensemble-machine-learning-algorithms-python-scikit-learn/)
