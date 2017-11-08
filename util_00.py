@@ -68,6 +68,7 @@ def print_results(y_test, y_pred):
     print('F1 score: ', f1_score(y_test, y_pred, average='weighted'))
 
 def generate_confusion_matrix(y_test, y_pred, image_name_w_ext):
+    print('Confusion matrix: ', confusion_matrix(y_test, y_pred))
     mat = confusion_matrix(y_test, y_pred)
     labels = get_tick_labels()
     print(labels)
@@ -75,6 +76,7 @@ def generate_confusion_matrix(y_test, y_pred, image_name_w_ext):
     plt.xlabel('true label')
     plt.ylabel('predicted label')
     plt.savefig(image_name_w_ext)
+    plt.clf()
 
 def get_pca_data(pca_component):
     x_train, x_test, y_train, y_test = get_data()
