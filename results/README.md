@@ -123,6 +123,7 @@ Precision score:  0.443021826763
 Recall score:  0.416971470373
 F1 score:  0.418820044314
 ~~~
+![Confusion Matrix](boosting/adaboost_confusion.png)
 
 ### Stochastic Gradient Boosting
 ~~~
@@ -140,6 +141,7 @@ Precision score:  0.46133604222
 Recall score:  0.452084857352
 F1 score:  0.438013617315
 ~~~
+![Confusion Matrix](boosting/gboost_confusion.png)
 
 ## 6. Bagging Algorithms
 * [07_bagging.py](07_bagging.py)
