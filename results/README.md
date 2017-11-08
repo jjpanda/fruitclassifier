@@ -81,7 +81,7 @@ F1 score:  0.73908332645
 ![Confusion Matrix](cnn/cnn_confusion.png)
 
 ## 4. k-Nearest Neighbors
-* [k-nn.py]((../05_knn.py)
+* [k-nn.py](../05_knn.py)
 ~~~
              precision    recall  f1-score   support
 
@@ -92,7 +92,10 @@ F1 score:  0.73908332645
 
 avg / total       0.52      0.52      0.52      2734
 
-accuracy_score: 0.522311631309
+Accuracy score:  0.522311631309
+Precision score:  0.524946498437
+Recall score:  0.522311631309
+F1 score:  0.519671302532
 ~~~
 ### Confusion Matrix
 ![Confusion Matrix](knn/knn_confusion.png)
