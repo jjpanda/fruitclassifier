@@ -11,6 +11,7 @@ To build an image classification system to classify 4 kinds of fruits:
 # Install
 ~~~
 pip3 install theano tensorflow keras
+pip3 install h5py
 ~~~
 
 # Data
