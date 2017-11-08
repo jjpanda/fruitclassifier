@@ -84,7 +84,7 @@ F1 score:  0.700299616223
 ![Confusion Matrix](cnn/cnn_confusion.png)
 
 ## 4. k-Nearest Neighbors
-* [k-nn.py](../05_knn.py)
+* [05_knn.py](../05_knn.py)
 ~~~
 best params:  {'n_neighbors': 6, 'weights': 'distance'}
 Results for knn
