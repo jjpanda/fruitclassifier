@@ -45,6 +45,7 @@ avg / total       0.52      0.52      0.52      2734
 
 accuracy_score: 0.522311631309
 ~~~
+### Confusion Matrix
 ![Confusion Matrix](results/knn/knn_confusion.png)
 
 ## Gaussian Naive Bayes
@@ -61,6 +62,7 @@ avg / total       0.44      0.43      0.42      2734
 
 accuracy_score: 0.430504754938
 ~~~
+### Confusion Matrix
 ![Confusion Matrix](results/gnb/gnb_confusion.png)
 
 ## Boosting Algorithms
@@ -91,6 +93,7 @@ Precision score:  0.630897835309
 Recall score:  0.628383321141
 F1 score:  0.62809594008
 ~~~
+### Confusion Matrix
 ![Confusion Matrix](results/bagging/bagging_confusion.png)
 
 ### Random Forest
@@ -109,6 +112,7 @@ Precision score:  0.544276773588
 Recall score:  0.542062911485
 F1 score:  0.541542739069
 ~~~
+### Confusion Matrix
 ![Confusion Matrix](results/bagging/rforest_confusion.png)
 
 ### Extra Trees
@@ -183,6 +187,7 @@ Precision score:  0.754531643345
 Recall score:  0.740307242136
 F1 score:  0.73908332645
 ~~~
+### Confusion Matrix
 ![Confusion Matrix](results/cnn/cnn_confusion.png)
 
 # References
