@@ -7,7 +7,7 @@ x_train, x_test, y_train, y_test = util.get_pca_data(6)
 
 #default base estimator = decision three
 def bagging_():
-    return ensemble.BaggingClassifier(tree.DecisionTreeClassifier(), oob_score = True, random_state = 2017)
+    return ensemble.BaggingClassifier(tree.DecisionTreeClassifier(), max_samples = 0.5, max_features = 1, oob_score = True, random_state = 2017)
 
 def rforest_():
     return ensemble.RandomForestClassifier(max_features = 1, oob_score = True, random_state = 2017)
