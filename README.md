@@ -14,7 +14,7 @@ pip3 install theano tensorflow keras
 ~~~
 
 # Data
-1. Download and export URLs of images of each fruit type from ImageNet as [text files](fruitclassifier/data/download/url/)
+1. Download and export URLs of images of each fruit type from ImageNet as [text files](data/download/url/)
 2. Run [00_dl_images.py](00_dl_images.py) to download the images
 3. Run [01_trans_images.py](01_trans_images.py) 
      * x_train = Resize (128 x 128), Flip and/or Rotate
