@@ -1,6 +1,6 @@
 # Image classification of fruits
 
-## To build an image classification system to classify 4 kinds of fruits: 
+To build an image classification system to classify 4 kinds of fruits: 
 ~~~
 1. apple
 2. orange
