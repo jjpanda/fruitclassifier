@@ -147,17 +147,17 @@ F1 score:  0.438013617315
 ~~~
              precision    recall  f1-score   support
 
-          0       0.55      0.59      0.56       576
-          1       0.72      0.68      0.70       829
-          2       0.60      0.53      0.57       683
-          3       0.62      0.70      0.66       646
+          0       0.27      0.32      0.30       576
+          1       0.43      0.42      0.43       829
+          2       0.30      0.26      0.28       683
+          3       0.35      0.36      0.36       646
 
-avg / total       0.63      0.63      0.63      2734
+avg / total       0.35      0.35      0.35      2734
 
-Accuracy score:  0.628383321141
-Precision score:  0.630897835309
-Recall score:  0.628383321141
-F1 score:  0.62809594008
+Accuracy score:  0.345647403072
+Precision score:  0.347278774746
+Recall score:  0.345647403072
+F1 score:  0.345614306097
 ~~~
 ### Confusion Matrix
 ![Confusion Matrix](bagging/bagging_confusion.png)
