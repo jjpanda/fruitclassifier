@@ -69,14 +69,16 @@ model.compile(loss=keras.losses.categorical_crossentropy, optimizer = keras.opti
 run = model.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, verbose=1, validation_data=(x_test, y_test))
 score = model.evaluate(x_test, y_test, verbose=0)
 model.save('04_CNN.h5')
-y_pred2 = model.predict(x_test)
+
 y_pred = np.argmax(model.predict(x_test), axis=1)
+y_test = np.argmax(y_test, axis=1)
 
 print(y_test)
 print(y_pred)
 print('Results for cnn')
 util.generate_confusion_matrix(y_test, y_pred, 'cnn_confusion.png')
 util.print_results(y_test, y_pred)
+
 
 
 

@@ -10,7 +10,7 @@ print(y_train.shape)
 x_train = [x.reshape(1, -1)[0] for x in x_train]
 x_test = [x.reshape(1, -1)[0] for x in x_test]
 
-pca_components = [3, 6, 9 , 12, 15, 18, 21, 24, 50, 100, 150, 200]
+pca_components = [60, 70, 80, 90 , 100, 110, 120, 130, 140]
 
 for n in pca_components:
     print('n_components:', n)

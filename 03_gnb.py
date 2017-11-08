@@ -1,5 +1,3 @@
-import pickle
-
 import numpy as np
 from sklearn.naive_bayes import GaussianNB
 
@@ -11,10 +9,7 @@ model = GaussianNB()
 model.fit(x_train, y_train)
 y_pred = model.predict(x_test)
 
-gnb_pkl_filename = 'gnb_classifier_20171105.pkl'
-gnb_model_pkl = open(gnb_pkl_filename, 'wb')
-pickle.dump(model, gnb_model_pkl)
-gnb_model_pkl.close()
+util.save_pkl(model, 'gnb_classifier')
 
 print('Results for gnb')
 util.print_results(y_test, y_pred)

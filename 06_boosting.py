@@ -18,6 +18,7 @@ for i in models:
     model = i()
     model.fit(x_train, y_train)
     y_pred = np.array(model.predict(x_test))
+    util.save_pkl(model, i.__name__+'classifier')
     
     print('Results for', i.__name__)
     util.print_results(y_test, y_pred)
