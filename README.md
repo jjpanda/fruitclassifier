@@ -21,7 +21,8 @@ pip3 install theano tensorflow keras
      * x_test = Resize (128 x 128)
 4. Perform analysis on various models
 
-# [Results](results/README.md)
+# Results
+* [Click here](results/README.md)
 
 # References
 * [Ensemble ML](https://machinelearningmastery.com/ensemble-machine-learning-algorithms-python-scikit-learn/)
