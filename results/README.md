@@ -1,12 +1,12 @@
 # Results
 
-## Principal component analysis 
+## 1. Principal component analysis 
 * [02_pca.py](../02_pca.py)
 
 A vital part of using PCA in practice is the ability to estimate how many components are needed to describe the data. We can determine this by looking at the cumulative explained variance ratio as a function of the number of components.
 ![pca](pca/pca.png)
 
-## Gaussian Naive Bayes
+## 2. Gaussian Naive Bayes
 * [03_gnb.py](../03_gnb.py)
 ~~~
              precision    recall  f1-score   support
@@ -23,7 +23,7 @@ accuracy_score: 0.430504754938
 ### Confusion Matrix
 ![Confusion Matrix](gnb/gnb_confusion.png)
 
-## Convolutional Neural Netwnork (CNN) using Keras
+## 3. Convolutional Neural Netwnork (CNN) using Keras
 * [04_cnn.py](04_cnn.py)
 ### Model Summary
 ~~~
@@ -80,7 +80,7 @@ F1 score:  0.73908332645
 ### Confusion Matrix
 ![Confusion Matrix](cnn/cnn_confusion.png)
 
-## k-Nearest Neighbors
+## 4. k-Nearest Neighbors
 * [k-nn.py]((../05_knn.py)
 ~~~
              precision    recall  f1-score   support
@@ -97,7 +97,7 @@ accuracy_score: 0.522311631309
 ### Confusion Matrix
 ![Confusion Matrix](knn/knn_confusion.png)
 
-## Boosting Algorithms
+## 5. Boosting Algorithms
 * [06_boosting.py](06_boosting.py)
 ### AdaBoost
 ~~~
@@ -107,7 +107,7 @@ accuracy_score: 0.522311631309
 ~~~
 ~~~
 
-## Bagging Algorithms
+## 6. Bagging Algorithms
 * [07_bagging.py](07_bagging.py)
 ### Bagged Decision Trees
 ~~~
@@ -164,5 +164,3 @@ Recall score:  0.507315288954
 F1 score:  0.504358756098
 ~~~
 ![Confusion Matrix](bagging/extree_confusion.png)
-
-
