@@ -26,4 +26,5 @@ pip3 install theano tensorflow keras
 
 # References
 * [Ensemble ML](https://machinelearningmastery.com/ensemble-machine-learning-algorithms-python-scikit-learn/)
+* [ML on AWS](https://machinelearningmastery.com/develop-evaluate-large-deep-learning-models-keras-amazon-web-services/)
 
