@@ -84,7 +84,7 @@ F1 score:  0.700299616223
 ![Confusion Matrix](cnn/cnn_confusion.png)
 
 ## 4. k-Nearest Neighbors
-* [k-nn.py](../05_knn.py)
+* [05_knn.py](../05_knn.py)
 ~~~
 best params:  {'n_neighbors': 6, 'weights': 'distance'}
 Results for knn
@@ -123,6 +123,7 @@ Precision score:  0.443021826763
 Recall score:  0.416971470373
 F1 score:  0.418820044314
 ~~~
+![Confusion Matrix](boosting/adaboost_confusion.png)
 
 ### Stochastic Gradient Boosting
 ~~~
@@ -140,6 +141,7 @@ Precision score:  0.46133604222
 Recall score:  0.452084857352
 F1 score:  0.438013617315
 ~~~
+![Confusion Matrix](boosting/gboost_confusion.png)
 
 ## 6. Bagging Algorithms
 * [07_bagging.py](07_bagging.py)
@@ -147,17 +149,23 @@ F1 score:  0.438013617315
 ~~~
              precision    recall  f1-score   support
 
-          0       0.55      0.59      0.56       576
-          1       0.72      0.68      0.70       829
-          2       0.60      0.53      0.57       683
-          3       0.62      0.70      0.66       646
+          0       0.27      0.32      0.30       576
+          1       0.43      0.42      0.43       829
+          2       0.30      0.26      0.28       683
+          3       0.35      0.36      0.36       646
 
-avg / total       0.63      0.63      0.63      2734
+avg / total       0.35      0.35      0.35      2734
 
-Accuracy score:  0.628383321141
-Precision score:  0.630897835309
-Recall score:  0.628383321141
-F1 score:  0.62809594008
+Accuracy score:  0.345647403072
+Precision score:  0.347278774746
+Recall score:  0.345647403072
+F1 score:  0.345614306097
+
+Confusion matrix:  
+[[185 129 110 152]
+ [163 349 187 130]
+ [155 202 177 149]
+ [172 129 111 234]]
 ~~~
 ### Confusion Matrix
 ![Confusion Matrix](bagging/bagging_confusion.png)
@@ -177,6 +185,12 @@ Accuracy score:  0.542062911485
 Precision score:  0.544276773588
 Recall score:  0.542062911485
 F1 score:  0.541542739069
+
+Confusion matrix:  
+[[299  80  82 115]
+ [132 483 130  84]
+ [111 139 296 137]
+ [ 88  55  99 404]]
 ~~~
 ### Confusion Matrix
 ![Confusion Matrix](bagging/rforest_confusion.png)
@@ -196,5 +210,11 @@ Accuracy score:  0.507315288954
 Precision score:  0.506831941778
 Recall score:  0.507315288954
 F1 score:  0.504358756098
+
+Confusion matrix:  
+[[273  99  87 117]
+ [119 500 112  98]
+ [144 150 232 157]
+ [112  54  98 382]]
 ~~~
 ![Confusion Matrix](bagging/extree_confusion.png)
