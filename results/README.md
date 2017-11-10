@@ -149,23 +149,23 @@ F1 score:  0.438013617315
 ~~~
              precision    recall  f1-score   support
 
-          0       0.27      0.32      0.30       576
-          1       0.43      0.42      0.43       829
-          2       0.30      0.26      0.28       683
-          3       0.35      0.36      0.36       646
+          0       0.45      0.54      0.49       576
+          1       0.62      0.62      0.62       829
+          2       0.47      0.39      0.43       683
+          3       0.54      0.54      0.54       646
 
-avg / total       0.35      0.35      0.35      2734
+avg / total       0.53      0.53      0.52      2734
 
-Accuracy score:  0.345647403072
-Precision score:  0.347278774746
-Recall score:  0.345647403072
-F1 score:  0.345614306097
+Accuracy score:  0.525969275786
+Precision score:  0.526831611224
+Recall score:  0.525969275786
+F1 score:  0.524386794788
 
 Confusion matrix:  
-[[185 129 110 152]
- [163 349 187 130]
- [155 202 177 149]
- [172 129 111 234]]
+[[309  84  87  96]
+ [132 515  98  84]
+ [125 173 264 121]
+ [127  62 107 350]]
 ~~~
 ### Confusion Matrix
 ![Confusion Matrix](bagging/bagging_confusion.png)
@@ -174,23 +174,23 @@ Confusion matrix:
 ~~~
              precision    recall  f1-score   support
 
-          0       0.47      0.52      0.50       576
-          1       0.64      0.58      0.61       829
-          2       0.49      0.43      0.46       683
-          3       0.55      0.63      0.58       646
+          0       0.55      0.60      0.57       576
+          1       0.72      0.67      0.69       829
+          2       0.58      0.51      0.54       683
+          3       0.61      0.69      0.65       646
 
-avg / total       0.54      0.54      0.54      2734
+avg / total       0.62      0.62      0.62      2734
 
-Accuracy score:  0.542062911485
-Precision score:  0.544276773588
-Recall score:  0.542062911485
-F1 score:  0.541542739069
+Accuracy score:  0.618873445501
+Precision score:  0.621300781095
+Recall score:  0.618873445501
+F1 score:  0.618506438507
 
 Confusion matrix:  
-[[299  80  82 115]
- [132 483 130  84]
- [111 139 296 137]
- [ 88  55  99 404]]
+[[344  74  61  97]
+ [ 99 553 107  70]
+ [104 112 349 118]
+ [ 80  33  87 446]]
 ~~~
 ### Confusion Matrix
 ![Confusion Matrix](bagging/rforest_confusion.png)
@@ -199,22 +199,22 @@ Confusion matrix:
 ~~~
              precision    recall  f1-score   support
 
-          0       0.42      0.47      0.45       576
-          1       0.62      0.60      0.61       829
-          2       0.44      0.34      0.38       683
-          3       0.51      0.59      0.55       646
+          0       0.52      0.57      0.54       576
+          1       0.71      0.65      0.68       829
+          2       0.59      0.51      0.55       683
+          3       0.58      0.68      0.63       646
 
-avg / total       0.51      0.51      0.50      2734
+avg / total       0.61      0.60      0.60      2734
 
-Accuracy score:  0.507315288954
-Precision score:  0.506831941778
-Recall score:  0.507315288954
-F1 score:  0.504358756098
+Accuracy score:  0.604608632041
+Precision score:  0.609209335073
+Recall score:  0.604608632041
+F1 score:  0.604660692954
 
 Confusion matrix:  
-[[273  99  87 117]
- [119 500 112  98]
- [144 150 232 157]
- [112  54  98 382]]
+[[328  73  61 114]
+ [110 540 101  78]
+ [105 109 347 122]
+ [ 89  42  77 438]]
 ~~~
 ![Confusion Matrix](bagging/extree_confusion.png)
