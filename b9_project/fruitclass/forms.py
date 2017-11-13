@@ -1,5 +1,4 @@
 from django import forms
 
 class ImageForm(forms.Form):
-    print('image')
-    imagefile = forms.ImageField(label='Photo', required=True)
+    imagefile = forms.ImageField(label='Upload Photo', required=True)

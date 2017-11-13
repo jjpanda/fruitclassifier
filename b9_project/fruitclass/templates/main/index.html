@@ -1,15 +1,15 @@
 
 {% extends "base.html" %}
 {% block content %}
-
+<h1>Image classification of fruits</h1>
 	<form method="post" action="" enctype="multipart/form-data"> {% csrf_token %}
 {{ form.as_p }}
-
     <input type="submit" value="Submit" />
 </form>
 
+<h2>Results</h2>
 
-<table data-table-list class="table-striped table-bordered">
+<table class="table-striped table-bordered">
     <tr>
         <th>Fruit</th>
         <th>Probability</th>
@@ -22,6 +22,6 @@
     {% endfor %}
 </table>
 
-<img src="{{img}}"/>
+<img src="{{img}}">
 
 {% endblock %}

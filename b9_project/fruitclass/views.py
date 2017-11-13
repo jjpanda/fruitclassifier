@@ -1,10 +1,12 @@
 from django.shortcuts import render
+from django import template
 
 # Create your views here.
 from django.template import loader
 
 from django.conf import settings
 from django.forms.forms import Form
+import base64
 model = settings.MODEL
 
 from .forms import ImageForm
@@ -18,10 +20,10 @@ def index(request):
         form = ImageForm(request.POST, request.FILES)
         if form.is_valid():
             print(request.FILES)
-            result = handle_uploaded_image(request.FILES['imagefile'])
+            upFile = request.FILES['imagefile']
+            result = handle_uploaded_image(upFile)
             context  = {
                 'text': result,
-                'img' : request.FILES['imagefile'],
                 'form': form
                 }
             return render(request,'main/index.html', context )
