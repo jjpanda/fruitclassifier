@@ -4,7 +4,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
 
-from .models import ImageModel
 from .forms import ImageForm
 
 def index(request):
@@ -18,11 +17,9 @@ def index(request):
     
     else:
         form = ImageForm()
-    
-    documents = ImageModel.objects.all()
-    
+        
     return render(
         request,
         'main/index.html',
-        {'documents': documents, 'form': form}
+        {'form': form}
     )
