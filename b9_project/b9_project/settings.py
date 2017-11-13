@@ -117,6 +117,21 @@ USE_TZ = True
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+from keras.models import load_model
+from PIL import Image
+import numpy as np
+
+print('loading model')
+model = load_model('04_CNN.h5')
+im = np.array(Image.open('apple.jpg'))
+im = im.reshape(-1, 128 , 128, 3)
+im = im.astype('float32')
+im /= 255
+model.predict(im)
+print('model ready')
+
+MODEL = model
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 

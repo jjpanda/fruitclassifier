@@ -1,20 +1,27 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
 
-	
+{% extends "base.html" %}
+{% block content %}
+
 	<form method="post" action="" enctype="multipart/form-data"> {% csrf_token %}
-    <p>
-        
-        {{ form }}
-    </p>
+{{ form.as_p }}
+
     <input type="submit" value="Submit" />
 </form>
-	
-  </head>
-  <body>
-</body>
-</html>
+
+
+<table data-table-list class="table-striped table-bordered">
+    <tr>
+        <th>Fruit</th>
+        <th>Probability</th>
+    </tr>
+    {% for item in text %}
+    <tr> 
+        <td>{{ item.0 }}</td>
+        <td>{{ item.1 }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<img src="{{img}}"/>
+
+{% endblock %}
