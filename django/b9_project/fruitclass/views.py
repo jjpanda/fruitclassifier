@@ -10,6 +10,7 @@ import base64
 model = settings.MODEL
 
 from .forms import ImageForm
+from django.core.files.storage import FileSystemStorage
 
 from PIL import Image
 from io import BytesIO
@@ -22,9 +23,16 @@ def index(request):
             print(request.FILES)
             upFile = request.FILES['imagefile']
             result = handle_uploaded_image(upFile)
+            
+            fs = FileSystemStorage()
+            filename = fs.save(upFile.name, upFile)
+            uploaded_file_url = fs.url(filename)
+            print(uploaded_file_url)
+            
             context  = {
                 'text': result,
-                'form': form
+                'form': form,
+                'img': uploaded_file_url
                 }
             return render(request,'main/index.html', context )
     else:
