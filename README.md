@@ -26,8 +26,7 @@ pip3 install h5py
 * [Click here](results/README.md)
 
 # Setup Web Server
-
-
+* [Click here](django/README.md)
 
 # References
 * [Ensemble ML](https://machinelearningmastery.com/ensemble-machine-learning-algorithms-python-scikit-learn/)
