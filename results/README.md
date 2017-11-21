@@ -8,6 +8,7 @@ A vital part of using PCA in practice is the ability to estimate how many compon
 
 ## 2. Gaussian Naive Bayes
 * [03_gnb.py](../03_gnb.py)
+* Saved Model: [gnb_classifier_09112017.pkl](gnb/gnb_classifier_09112017.pkl)
 ~~~
              precision    recall  f1-score   support
 
@@ -28,6 +29,7 @@ F1 score:  0.421662646121
 
 ## 3. Convolutional Neural Netwnork (CNN) using Keras
 * [04_cnn.py](04_cnn.py)
+* Saved Model: [04_CNN.h5](cnn/04_CNN.h5)
 ### Model Summary
 ~~~
 24606 train samples
@@ -85,6 +87,7 @@ F1 score:  0.700299616223
 
 ## 4. k-Nearest Neighbors
 * [05_knn.py](../05_knn.py)
+* Saved Model: [knn_classifier_09112017.pkl](knn/knn_classifier_09112017.pkl)
 ~~~
 best params:  {'n_neighbors': 6, 'weights': 'distance'}
 Results for knn
@@ -107,7 +110,9 @@ F1 score:  0.52432058499
 
 ## 5. Boosting Algorithms
 * [06_boosting.py](06_boosting.py)
+
 ### AdaBoost
+* Saved Model: [adaboost_classifier_09112017.pkl](boosting/adaboost_classifier_09112017.pkl)
 ~~~
              precision    recall  f1-score   support
 
@@ -126,6 +131,7 @@ F1 score:  0.418820044314
 ![Confusion Matrix](boosting/adaboost_confusion.png)
 
 ### Stochastic Gradient Boosting
+* Saved Model: [gboost_classifier_09112017.pkl](boosting/gboost_classifier_09112017.pkl)
 ~~~
              precision    recall  f1-score   support
 
@@ -145,7 +151,9 @@ F1 score:  0.438013617315
 
 ## 6. Bagging Algorithms
 * [07_bagging.py](07_bagging.py)
+
 ### Bagged Decision Trees
+* Saved Model: [bagging_classifier_10112017.pkl](bagging/bagging_classifier_10112017.pkl)
 ~~~
              precision    recall  f1-score   support
 
@@ -171,6 +179,7 @@ Confusion matrix:
 ![Confusion Matrix](bagging/bagging_confusion.png)
 
 ### Random Forest
+* Saved Model: [rforest_classifier_10112017.pkl](bagging/rforest_classifier_10112017.pkl)
 ~~~
              precision    recall  f1-score   support
 
@@ -196,6 +205,7 @@ Confusion matrix:
 ![Confusion Matrix](bagging/rforest_confusion.png)
 
 ### Extra Trees
+* Saved Model: [extree_classifier_10112017.pkl](bagging/extree_classifier_10112017.pkl)
 ~~~
              precision    recall  f1-score   support
 
