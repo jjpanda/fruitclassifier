@@ -27,7 +27,7 @@ F1 score:  0.421662646121
 ### Confusion Matrix
 ![Confusion Matrix](gnb/gnb_confusion.png)
 
-## 3. Convolutional Neural Netwnork (CNN) using Keras
+## 3. Convolutional Neural Network (CNN) using Keras
 * [04_cnn.py](04_cnn.py)
 * Saved Model: [04_CNN.h5](cnn/04_CNN.h5)
 ### Model Summary
