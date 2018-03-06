@@ -17,13 +17,15 @@ sudo pip install virtualenv
 sudo virtualenv newenv
 sudo source newenv/bin/activate
 
-
+sudo pip install -q -U pip setuptools wheel
 sudo pip install django
 sudo pip3 install scikit-learn
 sudo pip3 install Pillow
 sudo pip3 install seaborn
 sudo pip3 install matplotlib
+sudo pip install h5py
 sudo pip3 install --upgrade keras
+sudo pip install --upgrade tensorflow
 
 deactivate
 
