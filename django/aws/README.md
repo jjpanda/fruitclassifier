@@ -19,17 +19,19 @@ source newenv/bin/activate
 
 sudo pip install -q -U pip setuptools wheel
 sudo pip install django
-sudo pip3 install scikit-learn
-sudo pip3 install Pillow
-sudo pip3 install seaborn
-sudo pip3 install matplotlib
+sudo pip install scikit-learn
+sudo pip install Pillow
+sudo pip install seaborn
+sudo pip install matplotlib
 sudo pip install h5py
-sudo pip3 install --upgrade keras
+sudo pip install --upgrade keras
 sudo pip install --upgrade tensorflow
 
 sudo python manage.py runserver 0.0.0.0:8080
 
 deactivate
 
-python3 04_cnn.py
 ~~~
+# b9_project\b9_project\settings.py
+1. Ensure that DEBUG = True
+2. ALLOWED_HOSTS = ['<Host address or IP>']
