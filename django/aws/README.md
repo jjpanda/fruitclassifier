@@ -32,6 +32,6 @@ sudo python manage.py runserver 0.0.0.0:8080
 deactivate
 
 ~~~
-# b9_project\b9_project\settings.py
+### b9_project\b9_project\settings.py
 1. Ensure that DEBUG = True
-2. ALLOWED_HOSTS = ['<Host address or IP>']
+2. ALLOWED_HOSTS = ['Host address or IP']
