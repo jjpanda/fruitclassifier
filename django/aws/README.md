@@ -14,8 +14,8 @@ aws s3 ls s3://fruitclassifierdata
 aws s3 cp s3://fruitclassifierdata /home/ec2-user --recursive
 
 sudo pip install virtualenv
-virtualenv newenv
-source newenv/bin/activate
+sudo virtualenv newenv
+sudo source newenv/bin/activate
 
 
 sudo pip install django
@@ -24,6 +24,8 @@ sudo pip3 install Pillow
 sudo pip3 install seaborn
 sudo pip3 install matplotlib
 sudo pip3 install --upgrade keras
+
+deactivate
 
 python3 04_cnn.py
 ~~~
