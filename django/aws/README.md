@@ -14,8 +14,10 @@ aws s3 ls s3://fruitclassifierdata
 aws s3 cp s3://fruitclassifierdata /home/ec2-user --recursive
 
 sudo pip install virtualenv
+sudo virtualenv -p /usr/bin/python2.7 newenv
 sudo virtualenv newenv
-sudo source newenv/bin/activate
+source newenv/bin/activate
+
 
 sudo pip install -q -U pip setuptools wheel
 sudo pip install django
