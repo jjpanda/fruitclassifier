@@ -15,9 +15,7 @@ aws s3 cp s3://fruitclassifierdata /home/ec2-user --recursive
 
 sudo pip install virtualenv
 sudo virtualenv -p /usr/bin/python2.7 newenv
-sudo virtualenv newenv
 source newenv/bin/activate
-
 
 sudo pip install -q -U pip setuptools wheel
 sudo pip install django
@@ -28,6 +26,8 @@ sudo pip3 install matplotlib
 sudo pip install h5py
 sudo pip3 install --upgrade keras
 sudo pip install --upgrade tensorflow
+
+sudo python manage.py runserver 0.0.0.0:8080
 
 deactivate
 
