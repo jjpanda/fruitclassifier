@@ -13,6 +13,11 @@ aws configure
 aws s3 ls s3://fruitclassifierdata
 aws s3 cp s3://fruitclassifierdata /home/ec2-user --recursive
 
+sudo pip install virtualenv
+virtualenv --version
+virtualenv my_project
+
+
 sudo pip3 install django
 sudo pip3 install scikit-learn
 sudo pip3 install Pillow
