@@ -18,6 +18,7 @@ sudo pip3 install Pillow
 sudo pip3 install seaborn
 sudo pip3 install matplotlib
 sudo pip3 install --upgrade keras
+sudo pip install virtualenv
 
 python3 04_cnn.py
 ~~~
