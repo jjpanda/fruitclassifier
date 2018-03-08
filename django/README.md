@@ -2,6 +2,8 @@
 
 # Setup
 ~~~
+Using Python 3.6.2
+
 pip3 install django
 pip3 install theano tensorflow keras
 pip3 install h5py
