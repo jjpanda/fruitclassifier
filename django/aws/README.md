@@ -18,7 +18,7 @@ sudo pip install virtualenv
 sudo virtualenv -p /usr/bin/python2.7 newenv
 source newenv/bin/activate
 
-sudo pip install -q -U pip setuptools wheel
+sudo pip install -q -U pip setuptools wheel --> Doesn't seems to be working. It actually remove pip
 sudo pip install django
 sudo pip install scikit-learn
 sudo pip install Pillow
