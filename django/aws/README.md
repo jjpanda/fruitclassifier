@@ -8,6 +8,7 @@
 7. Scroll down and select the “g2.2xlarge” hardware.
 
 ~~~
+Login as ec2-user
 aws configure list
 aws configure
 aws s3 ls s3://fruitclassifierdata
