@@ -9,6 +9,8 @@
 
 ~~~
 Login as ec2-user
+
+/* Optional 
 aws configure list
 aws configure
 aws s3 ls s3://fruitclassifierdata
@@ -17,8 +19,10 @@ aws s3 cp s3://fruitclassifierdata /home/ec2-user --recursive
 sudo pip install virtualenv
 sudo virtualenv -p /usr/bin/python2.7 newenv
 source newenv/bin/activate
+*/
 
 sudo pip install -q -U pip setuptools wheel --> Doesn't seems to be working. It actually remove pip
+
 sudo pip install django
 sudo pip install scikit-learn
 sudo pip install Pillow
@@ -28,9 +32,10 @@ sudo pip install h5py
 sudo pip install --upgrade keras
 sudo pip install --upgrade tensorflow
 
+screen
 sudo python manage.py runserver 0.0.0.0:8080
 
-deactivate
+//deactivate
 
 ~~~
 ### b9_project\b9_project\settings.py
