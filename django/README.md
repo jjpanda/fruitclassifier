@@ -1,4 +1,6 @@
-# Django Web Server
+# Django Local Server
+
+Setup on [AWS](aws/README.md)
 
 # Setup
 ~~~
